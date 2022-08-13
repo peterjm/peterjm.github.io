@@ -4,10 +4,166 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="output.css" rel="stylesheet">
+
+  <title>Peter McCracken</title>
+  <meta name="description" content="The website of Peter McCracken, Toronto-based backend web developer">
+
+  <meta property="og:site_name" content="Peter McCracken">
+  <meta property="og:title" content="Peter McCracken">
+  <meta property="og:type" content="website">
+  <meta property="og:description" content="The website of Peter McCracken, Toronto-based backend web developer">
+  <meta property="og:image" content="https://petermccracken.com/me.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="420">
+  <meta property="og:image:height" content="420">
+  <meta property="og:url" content="https://petermccracken.com">
+  <meta property="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://petermccracken.com">
 </head>
-<body>
-  <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
+<body class="h-screen bg-cover bg-center" style="background-image: url(bg.jpg)">
+  <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+    <symbol id="email-icon" viewBox="0 0 40 40">
+      <path d="M34.9,30.5V15.6c-0.4,0.4-0.8,0.9-1.4,1.2c-3.4,2.7-6.2,4.8-8.2,6.6c-0.6,0.5-1.1,0.9-1.6,1.2c-0.4,0.3-0.9,0.6-1.7,0.9 c-0.7,0.3-1.4,0.5-2,0.5l0,0c-0.6,0-1.2-0.2-2-0.5c-0.7-0.3-1.2-0.6-1.7-0.9c-0.4-0.3-0.9-0.7-1.6-1.2c-2.1-1.7-4.8-3.8-8.2-6.6 c-0.5-0.4-0.9-0.8-1.4-1.2v14.9c0,0.2,0.1,0.3,0.2,0.4C5.7,31,5.9,31.1,6,31.1h28.4c0.2,0,0.3-0.1,0.4-0.2 C34.8,30.8,34.9,30.7,34.9,30.5L34.9,30.5z M34.9,10.2V9.7c0,0,0-0.1,0-0.2c0-0.1,0-0.2-0.1-0.2c-0.1,0-0.1,0-0.1-0.2 c0-0.1-0.1-0.2-0.2-0.1c-0.1,0-0.2,0-0.3,0H5.8C5.6,8.9,5.4,9,5.3,9.1C5.2,9.2,5.1,9.3,5.1,9.5c0,2.2,0.9,4,2.8,5.5 c2.5,2,5.1,4,7.7,6.1c0.1,0.1,0.3,0.2,0.7,0.5c0.4,0.3,0.6,0.5,0.9,0.7c0.2,0.2,0.5,0.4,0.8,0.6c0.3,0.2,0.7,0.4,0.9,0.5 c0.3,0.1,0.6,0.2,0.8,0.2l0,0c0.2,0,0.5-0.1,0.8-0.2c0.3-0.1,0.6-0.3,0.9-0.5c0.3-0.2,0.6-0.4,0.8-0.6c0.2-0.2,0.5-0.4,0.9-0.7 c0.4-0.3,0.6-0.5,0.6-0.5c2.7-2.1,5.3-4.2,7.7-6.1c0.7-0.5,1.4-1.2,2-2.2C34.6,11.8,34.9,11,34.9,10.2L34.9,10.2z M37.3,9.5v21 c0,0.8-0.3,1.6-0.9,2.2s-1.4,0.9-2.2,0.9H5.8c-0.8,0-1.6-0.3-2.2-0.9c-0.6-0.6-0.9-1.4-0.9-2.2v-21c0-0.8,0.3-1.6,0.9-2.2 s1.4-0.9,2.2-0.9h28.4c0.8,0,1.6,0.3,2.2,0.9S37.3,8.7,37.3,9.5z" />
+    </symbol>
+    <symbol id="linkedin-icon" viewBox="0 0 448 512">
+      <path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z" />
+    </symbol>
+    <symbol id="twitter-icon" viewBox="0 0 24 24">
+      <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
+    </symbol>
+  </svg>
+
+  <div class="flex items-center justify-center h-screen">
+
+    <div class="
+      w-full
+      rounded-lg
+      border
+      shadow-md
+
+      max-w-sm
+      md:max-w-md
+      lg:max-w-lg
+
+      bg-gray-800/[0.859]
+      border-gray-700
+      ">
+      <div class="
+        flex
+        flex-col
+        items-center
+
+        pb-10
+        pt-10
+        ">
+        <img src="me.jpg" alt="Peter McCracken image" class="
+          rounded-full
+          shadow-lg
+
+          mb-3
+          w-24
+          h-24
+          md:w-28
+          md:h-28
+          lg:w-36
+          lg:h-36
+          "
+          />
+
+        <h5 class="
+          font-medium
+
+          mb-1
+          text-xl
+          md:text-2xl
+          lg:text-3xl
+
+          text-white
+          ">
+          Peter McCracken
+        </h5>
+        <span class="
+          text-sm
+          md:text-md
+          lg:text-lg
+          text-gray-400
+          ">
+          Web Application Developer
+        </span>
+
+        <ul class="
+          flex
+
+          mt-4
+          space-x-3
+          md:mt-6
+          ">
+          <li>
+            <a href="https://twitter.com/peterjm" class="
+              inline-flex
+              items-center
+              rounded-full
+              border
+              focus:outline-none
+
+              py-3
+              px-3
+              focus:ring-4
+
+              bg-gray-800
+              hover:bg-gray-700
+              border-gray-600
+              hover:border-gray-700
+              focus:ring-gray-700
+              ">
+              <svg class="w-6 h-6 text-[#1DA1F2] fill-current"><use xlink:href="#twitter-icon"></use></svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/peterjm/" class="
+              inline-flex
+              items-center
+              rounded-full
+              border
+              focus:outline-none
+
+              py-3
+              px-3
+              focus:ring-4
+
+              bg-gray-800
+              hover:bg-gray-700
+              border-gray-600
+              hover:border-gray-700
+              focus:ring-gray-700
+              ">
+              <svg class="w-6 h-6 text-[#0A66C2] fill-current"><use xlink:href="#linkedin-icon"></use></svg>
+            </a>
+          </li>
+          <li>
+            <a href="mailto:%68%69%40%70%65%74%65%72%6a%6d%2e%63%61" class="
+              inline-flex
+              items-center
+              rounded-full
+              border
+              focus:outline-none
+
+              py-3
+              px-3
+              focus:ring-4
+
+              bg-gray-800
+              hover:bg-gray-700
+              border-gray-600
+              hover:border-gray-700
+              focus:ring-gray-700
+              ">
+              <svg class="w-6 h-6 text-[#F48FB1] fill-current"><use xlink:href="#email-icon"></use></svg>
+            </a>
+          </li>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
